@@ -1,0 +1,27 @@
+php artisan storage:link -> menghubungkan ke media penyimpanan
+sudo chmod -R 775 storage -> memberikan akses media penyimpanan
+
+
+jika masih error:
+sudo chmod -R 777 storage
+sudo chmod -R 777 bootstrap/cache
+php artisan view:clear
+php artisan config:clear
+
+yang diperlukan:
+composer require yajra/laravel-datatables-oracle -> Yajra datatable
+composer require amsey/uuid -> UUID
+
+update project dari local ke git:
+1. git status
+2. git add .
+3. git commit -m "Komentar"
+4. git push origin main
+
+update project dari git ke local:
+git pull origin main
+
+
+
+yang diinstall:
+composer require yajra/laravel-datatables-oracle
